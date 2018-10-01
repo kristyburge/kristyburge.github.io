@@ -1,0 +1,339 @@
+
+/*=======*/
+/*GENERAL*/
+/*=======*/
+.button.primary {
+    background-color: rebeccapurple;
+}
+
+.button.primary:hover {
+    background-color: purple;
+}
+
+/* use grid-container built-in class instead */
+/* .wrap {
+    width: 90%;
+    max-width: 1024px;
+    margin: 0 auto;
+} */
+
+
+.totop {
+    display: none; /* hide on page load */
+    position: fixed;
+    bottom: 2vh;
+    right: 2vw;
+    height: 40px;
+    width: 40px;
+    border-radius: 5%;
+    background: #ccc;
+    color: #444;
+    font-size: 2em;
+    font-weight: 800;
+    line-height: 40px;
+    text-align: center;
+    -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    -webkit-transition: -webkit-transform 0.25s ease-out;
+    transition: -webkit-transform 0.25s ease-out;
+    transition: transform 0.25s ease-out;
+    transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+.totop:hover,
+.totop:active {
+    -webkit-transform: translate(1px, 1px);
+    transform: translate(1px, 1px);
+}
+
+/*========================*/
+/*NAV - Mobile */
+/*========================*/
+.title-bar {
+    background: #444;
+    font-size: 1.2em;
+}
+
+.title-bar-title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.top-bar .site-logo {
+    text-align: center;
+}
+
+.off-canvas {
+    background: #fefefe;
+}
+
+.mobile-nav li a {
+    color: #444;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+    padding: 1.1em;
+    -webkit-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+}
+
+.mobile-nav li:first-child {
+    -webkit-box-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+}
+
+.mobile-nav li:not(:first-child) {
+    margin-top: 1px;
+}
+
+.mobile-nav li a:hover {
+    background: #ffe0f1;
+}
+
+
+
+/*========================*/
+/*NAV - Tablet and larger */
+/*========================*/
+
+.nav-desktop {
+    background: rgba(255,255,255,0.8);
+    color: #212121;
+    -webkit-box-shadow: 2px 3px 1px rgba(227,227,227,0.5);
+    box-shadow: 2px 3px 1px rgba(227,227,227,0.5);
+}
+
+.top-bar ul  {
+    background: inherit;
+    line-height: 80px;
+}
+
+.nav-desktop li a {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #212121;
+    -webkit-transition: background 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out, background 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
+.nav-desktop li a:hover,
+.nav-desktop li a:active,
+.is-active {
+    background: transparent;
+    -webkit-box-shadow: 0 3px 0 hotpink;
+    box-shadow: 0 3px 0 hotpink;
+}
+
+.site-logo,
+.site-logo a {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 2px #ccc;
+    margin: 0;
+    color: #212121;
+    line-height: 60px;
+}
+
+.sticky.is-stuck {
+    background: rgba(255,255,255,1);
+}
+
+
+/* Prevent flash of unstyled content before JavaScript loads */
+.no-js .top-bar {
+  display: none;
+}
+
+@media screen and (min-width: 40em) {
+  .no-js .top-bar {
+    display: block;
+  }
+
+  .no-js .title-bar {
+    display: none;
+  }
+}
+
+/*=======*/
+/*HERO*/
+/*=======*/
+.hero {
+   padding: 80px 0;
+   border-bottom: 2px solid hsl(150, 50%, 90%);
+   background: rgba(255,255,255,1);
+   background-image: url('../img/tiny-squares.png');
+   -webkit-box-shadow: 3px 5px 5px inset rgba(0,0,0,0.5);
+   box-shadow: 3px 3px 100px inset rgba(0,0,0,0.5);
+}
+
+/*=======*/
+/*MAIN*/
+/*=======*/
+
+.main {
+    padding: 80px 0;
+}
+
+.main hr {
+    border-bottom: 2px dotted #e0e2ff;
+}
+
+/*=======*/
+/*CONTACT*/
+/*=======*/
+.get-in-touch {
+  font-size: 1.1em;
+}
+
+.phone,
+.email,
+.phone:visited,
+.email:visited
+{
+  color: inherit;
+}
+
+.phone:focus,
+.email:focus,
+.phone:hover,
+.email:hover,
+.phone:active,
+.email:active {
+  color: rebeccapurple;
+}
+
+.social-icon {
+  padding: 20px;
+}
+
+.social-icon:first-of-type {
+  padding-left: 0;
+}
+
+.social-icon svg {
+  color: rebeccapurple;
+}
+
+.social-icon svg:hover {
+  opacity: 0.8;
+}
+
+.phone svg:hover,
+.email svg:hover {
+  color: rebeccapurple;
+  opacity: 0.8;
+}
+
+
+/*=======*/
+/*FOOTER*/
+/*=======*/
+.footer {
+    background: #444;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.footer a {
+    display: block;
+    color: #ccc;
+    font-size: 0.9em;
+}
+
+.footer span {
+    font-weight: bold;
+    color: #f5f5f5;
+}
+
+.footer a:hover {
+    color: #fefefe;
+}
+
+.footer .h4, .footer h4{
+    font-size: 1.1em;
+    color: inherit;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+}
+
+.footer hr {
+    border-bottom: 2px dotted #ffe0f1;
+    margin: 0.7em 0;
+}
+
+.siteinfo {
+    text-transform: lowercase;
+}
+
+/*=============*/
+/*MEDIA QUERIES*/
+/*=============*/
+@media screen and (min-width: 40em) {
+    .nav-desktop {
+        height: 80px;
+        padding: 0 2em;
+    }
+
+    .totop {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 3em;
+    }
+
+    .top-bar {
+        height: 115px;
+    }
+    .top-bar .site-logo {
+        text-align: center;
+        line-height: 40px;
+    }
+    .top-bar-right {
+        padding-bottom: 1em;
+    }
+    .site-logo, .top-bar ul{
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .grid-container {
+      padding-left: 2em;
+      padding-right: 2em;
+    }
+/*
+    .top-bar {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .top-bar-right {
+        margin: 0 auto;
+    }
+*/
+}
+
+@media screen and (min-width: 1024px) {
+    .top-bar {
+        height: 80px;
+        line-height: 80px;
+    }
+    .top-bar .site-logo {
+        text-align: left;
+    }
+    .sticky.is-stuck {
+        height: 60px;
+        line-height: 60px;
+    }
+    .top-bar-right {
+        padding-bottom: 0;
+    }
+
+}
