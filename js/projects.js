@@ -22,12 +22,13 @@ function createCard(id, name, description, image, github, url){
   cardSection.classList.add('card-section');
 
   const projectName = document.createElement('H3');
+  projectName.classList.add('text-center');
   projectName.innerText = name;
 
   const divider = document.createElement('HR');
 
   const projectDesc = document.createElement('P');
-  projectDesc.innerText = description;
+  projectDesc.innerText = description.slice(0,103).concat('...');
 
   const linksContainer = document.createElement('DIV');
   linksContainer.classList.add('links');
@@ -69,7 +70,7 @@ function createCard(id, name, description, image, github, url){
 }
 
 // Create an overlay lightbox for each project
-function createOverlay(id, name, description, image, github, url){
+function createOverlay(id, name, description, skills, image, github, url){
   const modalContainer = document.createElement('DIV');
   modalContainer.classList.add('popup');
   modalContainer.setAttribute('id', `project-${id}`);
@@ -90,6 +91,14 @@ function createOverlay(id, name, description, image, github, url){
 
       const projectDesc = document.createElement('P');
       projectDesc.innerText = description;
+
+      const skillsContainer = document.createElement('UL');
+
+      skills.forEach( skill => {
+        let skillItem = document.createElement('LI');
+        skillItem.innerText = skill;
+        skillsContainer.appendChild(skillItem);
+      })
 
       const linksContainer = document.createElement('DIV');
       linksContainer.classList.add('links');
@@ -122,6 +131,7 @@ function createOverlay(id, name, description, image, github, url){
   moreDetails.appendChild(projectName);
   moreDetails.appendChild(divider);
   moreDetails.appendChild(projectDesc);
+  moreDetails.appendChild(skillsContainer);
   moreDetails.appendChild(linksContainer);
 
   closeModalBtn.appendChild(span);
@@ -158,7 +168,7 @@ xhr.onreadystatechange = function(){
       // Loop through the results and create a card for each project
       results.forEach( result => {
         createCard(result.id, result.name, result.description, result.image, result.github, result.url);
-        createOverlay(result.id, result.name, result.description, result.image, result.github, result.url);
+        createOverlay(result.id, result.name, result.description, result.skills, result.image, result.github, result.url);
       });
 
       // ==============

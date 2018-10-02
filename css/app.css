@@ -278,6 +278,7 @@
   justify-content: center;
   margin: 0 auto;
   padding: 2em;
+  overflow-y: scroll;
 }
 
 .close-button {
@@ -308,6 +309,7 @@
 @media screen and (min-width: 1024px) {
   .popup {
     justify-content: flex-start;
+    overflow-y: hidden;
   }
 
 }

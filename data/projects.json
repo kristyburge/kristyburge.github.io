@@ -2,7 +2,8 @@
   {
     "id": 1,
     "name": "For Sale By Owner Website",
-    "description": "This project was built using Bootstrap and the Lightbox plugin.",
+    "description": "This project was built using Bootstrap and the Lightbox plugin. The house received 3 offers in 10 days and sold for full asking price.",
+    "skills": ["HTML5", "CSS3", "jQuery", "Bootstrap"],
     "image": "https://placehold.it/300x250",
     "github": "https://github.com/kristyburge",
     "url": "https://kristyburge.com"
@@ -10,31 +11,35 @@
   {
     "id": 2,
     "name": "Employee Directory",
-    "description": "Some API stuff and a custom lighbox!",
+    "description": "Built the front end of an employee directory from scratch and update the dynamic data through a public API. The employee directory features 12 employees (which update each time the app is displayed) and when an employee's card is clicked on, a modal window appears displaying more information about that employee. This project uses JavaScript, jQuery, and JSON objects through the Random User Generator API.",
+    "skills": ["HTML5", "CSS3", "JavaScript", "API", "JSON"],
     "image": "https://placehold.it/300x250",
-    "github": "https://github.com/kristyburge",
-    "url": ""
+    "github": "https://github.com/kristyburge/techdegree-employee-directory",
+    "url": "https://kristyburge.github.io/techdegree-employee-directory/"
   },
   {
     "id": 3,
-    "name": "Photo Gallery",
-    "description": "I made a lightbox",
+    "name": "Interactive Photo Gallery",
+    "description": "Built an interactive photo gallery using JavaScript to search and Lightbox plugin for the images. Users search the responsive photo gallery by typing the search box and results are found based on the caption in the photo.",
+    "skills": ["HTML5", "CSS3", "JavaScript", "jQuery"],
     "image": "https://placehold.it/300x250",
-    "github": "https://github.com/kristyburge",
-    "url": ""
+    "github": "https://github.com/kristyburge/techdegree-interactive-photo-gallery",
+    "url": "https://kristyburge.github.io/techdegree-interactive-photo-gallery/"
   },
   {
     "id": 4,
     "name": "Video Player",
-    "description": "HTML5 Video Player",
+    "description": "Built an HTML5 video player using JavaScript and the HTML5 Video API to synchronize a video transcript to the video player.",
+    "skills": ["HTML5", "CSS3", "SASS", "MediaElementJS", "JavaScript", "API"],
     "image": "https://placehold.it/300x250",
-    "github": "https://github.com/kristyburge",
+    "github": "https://github.com/kristyburge/techdegree-interactive-video-player",
     "url": ""
   },
   {
     "id": 5,
-    "name": "React Flickr Gallery",
-    "description": "Built on React and API",
+    "name": "SVG Animations",
+    "description": "Replaced raster images with scalable vector graphics for a dog boarding business.",
+    "skills": ["HTML5", "CSS3", "SVG"],
     "image": "https://placehold.it/300x250",
     "github": "https://github.com/kristyburge",
     "url": ""
@@ -42,9 +47,10 @@
   {
     "id": 6,
     "name": "Responsive Forms",
-    "description": "This project uses the HTML5 forms.",
+    "description": "Built a responsive, mobile-friendly HTML5 form and style with CSS3 using a mobile-first approach to get more subscribers to The Code Review newsletter.",
+    "skills": ["HTML5", "CSS3", "Responsive Design"],
     "image": "https://placehold.it/300x250",
-    "github": "https://github.com/kristyburge",
-    "url": ""
+    "github": "https://github.com/kristyburge/techdegree-registration-form",
+    "url": "https://kristyburge.github.io/techdegree-registration-form/"
   }
 ]
