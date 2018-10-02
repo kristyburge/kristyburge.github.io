@@ -1,12 +1,61 @@
-/*=======*/
+
+
+/*==========*/
 /*GENERAL*/
-/*=======*/
+/*==========*
 
 
 /*==========*/
 /*TYPOGRAPHY*/
 /*==========*/
+.section-title {
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2),
+               2px 2px 6px rgba(155,155,155,0.2);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 
+
+/*==========*/
+/*BRAND ICONS*/
+/*==========*/
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skill:last-child {
+  margin-bottom: 4em;
+}
+
+.skill svg {
+  transition: transform 0.5s ease-in-out;
+}
+.skill svg:hover {
+  transform: rotateZ(360deg);
+}
+.skill span {
+  font-size: 1.2em;
+  font-weight: 300;
+}
+.skill svg {
+  font-size: 4em;
+}
+svg.fa-html5 {
+  color: #e34f26;
+}
+svg.fa-css3-alt {
+  color: #264DE4;
+}
+svg.fa-js {
+  color: #f7df1e;
+}
+svg.fa-wordpress {
+  color: #21759b;
+}
+svg.fa-react {
+  color: #00d8ff;
+}
 
 
 /*=======*/
@@ -180,6 +229,31 @@
 }
 
 /*=======*/
+/*TYPED JS STYLES*/
+/*=======*/
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+
+#typed {
+  font-size: 3em;
+  font-family: 'Dancing Script', cursive;
+}
+
+#typed ul {
+  font-family: Arial, sans-serif;
+}
+
+.typed-cursor {
+  font-size: 3em;
+  font-weight: normal;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+
+/*=======*/
 /*MAIN*/
 /*=======*/
 
@@ -190,6 +264,22 @@
 .main hr {
     border-bottom: 2px dotted #e0e2ff;
 }
+
+/*=======*/
+/*ABOUT*/
+/*=======*/
+.profile-img {
+  border-radius: 50%;
+  display: inline-block;
+  float: left;
+  margin: 0 15px 15px 0;
+  transition: transform 0.25s ease-out;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
 
 /*=======*/
 /*CONTACT*/

@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kristy Burge - Web Developer Portfolio</title>
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/foundation.css">
   <link rel="stylesheet" href="css/app.css">
 </head>
@@ -55,7 +56,7 @@
       <div class="show-for-medium medium-horizontal" data-sticky-container>
         <nav class="top-bar nav-desktop stacked-for-medium" data-sticky data-margin-top="0">
           <div class="top-bar-left">
-            <h3 class="site-logo"><a href="#">Kristy Burge</a></h3>
+            <h3 class="site-logo"><a href="/">Kristy Burge</a></h3>
           </div>
 
           <div class="top-bar-right">
@@ -75,8 +76,14 @@
         <div class="grid-container">
           <div class="grid-x grid-margin-x grid-padding-x grid-padding-y">
             <div class="medium-6 medium-offset-3 cell">
-              <h1>Hi, I'm Kristy!</h1>
-              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed nemo perspiciatis ullam unde, totam, omnis voluptate rem quis veritatis explicabo cumque deleniti asperiores quibusdam. Qui!</p>
+<div id="typed-strings">
+  <p>Hi! I'm so glad you're here!</p>
+  <p>Hi! I'm Kristy. <br>I'm a front-end web developer.</p>
+  <p>Hi! I'm Kristy. <br>I make that stuff you envision in your head.^500 Yeah, that stuff...^500 look good online.</p>
+  <p>Hi! I'm Kristy. <br>So tell me about <strong>you...</strong> ^1000 how can I help?</p>
+  </div>
+<span id="typed"></span>
+              <p class="lead">I design and develop websites that make life easier.</p>
               <a href="#about" class="button primary">Learn more!</a>
               <a href="#contact" class="button success">Contact Me</a>
             </div>
@@ -91,20 +98,49 @@
           <div class="grid-container">
             <div class="grid-x grid-margin-x grid-padding-x grid-padding-y">
               <div class="cell text-center">
-                <h2>About</h2>
+                <h2 class="section-title">About</h2>
                 <hr>
               </div>
-              <div class="cell">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed repudiandae repellendus fugiat delectus, provident porro, consectetur harum vel reiciendis quod! Iste porro vitae alias provident iure! Nobis, enim libero est!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed repudiandae repellendus fugiat delectus, provident porro, consectetur harum vel reiciendis quod! Iste porro vitae alias provident iure! Nobis, enim libero est!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, veniam temporibus earum ea! Asperiores, nobis, nihil. Deserunt tenetur hic illum, harum, quasi tempore molestiae laudantium facilis porro ipsum repellendus corporis.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed repudiandae repellendus fugiat delectus, provident porro, consectetur harum vel reiciendis quod! Iste porro vitae alias provident iure! Nobis, enim libero est!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed repudiandae repellendus fugiat delectus, provident porro, consectetur harum vel reiciendis quod! Iste porro vitae alias provident iure! Nobis, enim libero est!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, veniam temporibus earum ea! Asperiores, nobis, nihil. Deserunt tenetur hic illum, harum, quasi tempore molestiae laudantium facilis porro ipsum repellendus corporis.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed repudiandae repellendus fugiat delectus, provident porro, consectetur harum vel reiciendis quod! Iste porro vitae alias provident iure! Nobis, enim libero est!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed repudiandae repellendus fugiat delectus, provident porro, consectetur harum vel reiciendis quod! Iste porro vitae alias provident iure! Nobis, enim libero est!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, veniam temporibus earum ea! Asperiores, nobis, nihil. Deserunt tenetur hic illum, harum, quasi tempore molestiae laudantium facilis porro ipsum repellendus corporis.</p>
+              <div class="media-object cell stack-for-small">
+                <div class="media-object-section align-self-center">
+                    <img src="https://placehold.it/250x250" class="thumbnail profile-img" alt="Kristy Burge">
+                </div>
+                <div class="media-object-section">
+                  <p>I'm a front-end web developer (with an eye for design) who specializes in mobile-first, responsive web design.
+                  <p>I'm a web developer and (soon graduate!) of the Treehouse Front End Techdegree program.</p>
+                  <p>I became interested in coding after working in the online business industry and helping other entrepreneurs troubleshoot their website issues.</p>
+                  <p>I quickly discovered that I had a knack (and love) for solving technical problems, so I focused on WordPress technical support and theme design & development.</p>
+                  <p>In my previous career, I crunched numbers and implemented new technology in corporate finance and accounting departments. I learned that my logical skills and Excel ninja tricks transfer well into coding.</p>
+                  <p>Now, I'm excited to take the next step in this journey:</p>
+                  <p><stong>Work as part of a development team and implement best practices in my code.</stong></p>
+                </div>
               </div>
+
+              <div class="cell text-center">
+                <h3>Skills</h3>
+                <hr>
+              </div>
+              <div class="cell medium-2 medium-offset-1 text-center skill">
+                <i class="fab fa-html5"></i>
+                <span> HTML5</span>
+              </div>
+              <div class="cell medium-2 text-center skill">
+                <i class="fab fa-css3-alt"></i>
+                <span> CSS3</span>
+              </div>
+              <div class="cell medium-2 text-center skill">
+                <i class="fab fa-js"></i>
+                <span> JavaScript</span>
+              </div>
+              <div class="cell medium-2 text-center skill">
+                <i class="fab fa-wordpress"></i>
+                <span> WordPress</span>
+              </div>
+              <div class="cell medium-2 text-center skill">
+                <i class="fab fa-react"></i>
+                <span> React</span>
+              </div>
+
             </div>
           </div><!-- end .grid-container -->
         </section>
@@ -113,8 +149,9 @@
           <div class="grid-container">
             <div class="projects-container grid-x grid-margin-x grid-padding-x grid-padding-y">
               <div class="cell text-center">
-                <h2>Projects</h2>
+                <h2 class="section-title">Projects</h2>
                 <hr>
+                <p class="lead">Learn more by reading the case studies behind each project. Click on a card image or button to see more project details.</p>
               </div>
               <div class="loading">LOADING...</div>
               <!-- insert projects here -->
@@ -151,7 +188,7 @@
         <div class="grid-container">
           <div class="grid-x grid-margin-x grid-padding-x grid-padding-y">
             <div class="cell text-center">
-              <h2>Contact</h2>
+              <h2 class="section-title">Contact</h2>
               <hr>
               <p class="lead">I'd love to hear from you! Want to work with me? Get in touch below and we'll chat about your business needs.</p>
               <div class="callout secondary success">Accepting new clients for December 2018! Book your project today.</div>
@@ -246,8 +283,9 @@
   <script src="js/vendor/what-input.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0-rc.3/dist/js/foundation.min.js" integrity="sha256-l1HhyJ0nfWQPdwsVJLNq8HfZNb3i1R9M82YrqVPzoJ4= sha384-NH8utV74bU+noXiJDlEMZuBe34Bw/X66sw22frHkgIs8R1QKWc8ckxYB4DheLjH4 sha512-JMs3Y+JjY+DhwVOPeJhkLM/0FeK9ANxvuYiHGpGp7Q2kMlmNEN/2v6TkrXdirxqB3DHxPlQ8iMxvb/eSPCF5CA=="
     crossorigin="anonymous"></script>
-
   <!--    <script src="js/vendor/foundation.min.js"></script>-->
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9/lib/typed.min.js" integrity="sha256-GoaMrUoEIL6dw8RzblEYTqd9wb9JwAtI+EM8dKoGziU=" crossorigin="anonymous"></script>
   <script src="js/app.js"></script>
   <script src="js/projects.js"></script>
   <script src="js/contact.js"></script>

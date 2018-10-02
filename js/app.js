@@ -14,3 +14,11 @@ function displayToTopBtn() {
         toTheTopBtn.style.display = 'none';
     }
 }
+
+
+// Typed library by https://mattboldt.com/demos/typed-js/
+const typed = new Typed('#typed', {
+  stringsElement: '#typed-strings',
+  typeSpeed: 70,
+  smartBackspace: true
+});
