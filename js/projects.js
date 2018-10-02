@@ -72,9 +72,8 @@ function createCard(id, name, description, image, github, url){
 // Create an overlay lightbox for each project
 function createOverlay(id, name, description, image, github, url){
   const modalContainer = document.createElement('DIV');
-  modalContainer.classList.add('reveal');
+  modalContainer.classList.add('popup');
   modalContainer.setAttribute('id', `project-${id}`);
-  modalContainer.setAttribute('data-reveal', '');
 
   const projectDetails = document.createElement('DIV');
   projectDetails.classList.add('project-details');
@@ -138,6 +137,33 @@ function createOverlay(id, name, description, image, github, url){
 
 }
 
+// ================
+// EVENTS - do this inside the readystate
+// ================
+
+      //
+      //     $('.prev').on('click', getPreviousCard);
+      //
+      //     // OR - listen for a left arrow key press
+      //     $(document).keydown(function(e) {
+      //       if (e.which === 37) {
+      //         getPreviousCard();
+      //       }
+      //     });
+      //
+      //     $('.next').on('click', getNextCard);
+      //
+      //     // OR - listen for a right arrow key press
+      //     $(document).keydown(function(e) {
+      //       if (e.which === 39) {
+      //         getNextCard();
+      //       }
+      //     });
+      //
+      //
+      //
+      // });
+
 // =============================
 // Connect to Projects JSON file
 // =============================
@@ -157,6 +183,50 @@ xhr.onreadystatechange = function(){
         createCard(result.id, result.name, result.description, result.image, result.github, result.url);
         createOverlay(result.id, result.name, result.description, result.image, result.github, result.url);
       });
+
+      // ==============
+      // EVENTS:
+      // When a project is clicked, open the modal for that project
+      // Close the modal by clicking the close button or hitting escape on keyboard
+      // ===============
+            // Listen on the PARENT card for the click event
+            $('.projects-container .card').on('click', function(e){
+              // only open the card if the user clicks the open details button
+              if (e.target.hasAttribute('data-open') || e.target.tagName === 'IMG') {
+                  console.log(this);
+                // Get the value of the employee #card-X
+                var cardID = $(this).attr('id');
+                var projectNumber = cardID.slice(5,7);
+
+                // Display the modal overlay
+                $('.modal').css('left', 0);
+
+                // Find the project popup to shadow
+                var projectToShow = document.getElementById('project-' + projectNumber);
+                projectToShow.style.display = 'flex';
+                projectToShow.classList.add('selected');
+
+                // Close the Modal if user clicks the X
+                $('.close-button').on('click', function(){
+                  // Hide the overlay & card
+                  $('.modal').css('left', '100%');
+                  $('.modal .popup').css('display', 'none');
+                  $('.modal .popup').removeClass('selected');
+                });
+
+                // OR - listen for a keydown event and close the modal when ESC key is pressed
+                $(document).keydown(function(e) {
+                  if (e.which === 27) {
+                    // Hide the overlay & card
+                    $('.modal').css('left', '100%');
+                    $('.modal .popup').css('display', 'none');
+                    $('.modal .popup').removeClass('selected');
+                  }
+                });
+
+              }
+
+            });
 
     } // end status === 200
   } // end readyState 4
