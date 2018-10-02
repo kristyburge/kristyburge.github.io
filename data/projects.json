@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "For Sale By Owner Website",
+    "description": "This project was built using Bootstrap and the Lightbox plugin.",
+    "image": "https://placehold.it/300x250",
+    "github": "https://github.com/kristyburge",
+    "url": "https://kristyburge.com"
+  },
+  {
+    "id": 2,
+    "name": "Employee Directory",
+    "description": "Some API stuff and a custom lighbox!",
+    "image": "https://placehold.it/300x250",
+    "github": "",
+    "url": ""
+  },
+  {
+    "id": 3,
+    "name": "Photo Gallery",
+    "description": "I made a lightbox",
+    "image": "https://placehold.it/300x250",
+    "github": "",
+    "url": ""
+  },
+  {
+    "id": 4,
+    "name": "Video Player",
+    "description": "HTML5 Video Player",
+    "image": "https://placehold.it/300x250",
+    "github": "",
+    "url": ""
+  },
+  {
+    "id": 5,
+    "name": "React Flickr Gallery",
+    "description": "Built on React and API",
+    "image": "https://placehold.it/300x250",
+    "github": "",
+    "url": ""
+  },
+  {
+    "id": 6,
+    "name": "Responsive Forms",
+    "description": "This project uses the HTML5 forms.",
+    "image": "https://placehold.it/300x250",
+    "github": "",
+    "url": ""
+  }
+]

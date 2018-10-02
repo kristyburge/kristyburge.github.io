@@ -1,9 +1,7 @@
 $(document).foundation();
 
-
-
 // Display the "to top" button only when the user has scrolled down the page 300px
-window.onscroll = function() { 
+window.onscroll = function() {
     displayToTopBtn()
 };
 

@@ -103,73 +103,31 @@
 
         <section id="projects" data-magellan-target="projects">
           <div class="grid-container">
-            <div class="grid-x grid-margin-x grid-padding-x grid-padding-y">
+            <div class="projects-container grid-x grid-margin-x grid-padding-x grid-padding-y">
               <div class="cell text-center">
                 <h2>Projects</h2>
                 <hr>
               </div>
+              <!-- insert projects here -->
+
+              <!-- TEMPLATE -->
               <div class="medium-6 large-4 cell">
                 <div class="card">
-                  <img src="https://placehold.it/300x250">
+                  <a href="#"><img src="https://placehold.it/300x250"></a>
                   <div class="card-section">
                     <h3>Project 1</h3>
                     <hr>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, et minus ducimus officia nulla ducimus, non, distinctio quaerat!</p>
-                  </div>
-                </div>
-              </div>
-              <div class="medium-6 large-4 cell">
-                <div class="card">
-                  <img src="https://placehold.it/300x250">
-                  <div class="card-section">
-                    <h3>Project 2</h3>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, et minus ducimus officia nulla ducimus, non, distinctio quaerat!</p>
-                  </div>
-                </div>
-              </div>
-              <div class="medium-6 large-4 cell">
-                <div class="card">
-                  <img src="https://placehold.it/300x250">
-                  <div class="card-section">
-                    <h3>Project 3</h3>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, et minus ducimus officia nulla ducimus, non, distinctio quaerat!</p>
+                    <div class="links">
+                      <a href="https://github.com/kristyburge" target="_blank" class="button primary">See project files</a>
+                      <a href="https://kristyburge.com" target="_blank" class="button success">See it live!</a>
+                      <button class="button" data-open="project-id">Click me for a modal</button>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div class="medium-6 large-4 cell">
-                <div class="card">
-                  <img src="https://placehold.it/300x250">
-                  <div class="card-section">
-                    <h3>Project 4</h3>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, et minus ducimus officia nulla ducimus, non, distinctio quaerat!</p>
-                  </div>
-                </div>
-              </div>
-              <div class="medium-6 large-4 cell">
-                <div class="card">
-                  <img src="https://placehold.it/300x250">
-                  <div class="card-section">
-                    <h3>Project 5</h3>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, et minus ducimus officia nulla ducimus, non, distinctio quaerat!</p>
-                  </div>
-                </div>
-              </div>
-              <div class="medium-6 large-4 cell">
-                <div class="card">
-                  <img src="https://placehold.it/300x250">
-                  <div class="card-section">
-                    <h3>Project 6</h3>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, et minus ducimus officia nulla ducimus, non, distinctio quaerat!</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            </div><!-- .projects-container -->
           </div><!-- end .grid-container -->
         </section>
 
@@ -213,6 +171,32 @@
         </div><!-- end .grid-container -->
       </section>
 
+      <!-- Add modal -->
+      <div class="modal">
+        <!-- MODAL TEMPLATE -->
+          <div class="reveal" id="project-id" data-reveal>
+            <div class="project-details">
+              <img src="https://placehold.it/500x350">
+              <div class="project-details--more">
+                <h3>Project 1</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, et minus ducimus officia nulla ducimus, non, distinctio quaerat!</p>
+                <div class="links">
+                  <a href="https://github.com/kristyburge" target="_blank" class="button primary">See project files</a>
+                  <a href="https://kristyburge.com" target="_blank" class="button success">See it live!</a>
+                </div>
+              </div>
+            </div>
+          <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div><!-- end .reveal -->
+
+        <!-- The rest of the modals will be generated and inserted here -->
+
+      </div>
+
+
       <!-- FOOTER -->
       <footer class="footer">
         <div class="grid-container">
@@ -231,8 +215,7 @@
             <i class="fas fa-angle-up"></i>
           </span>
         </a>
-      </div>
-
+      </div><!-- end .totop svg icon -->
     </div>
   </div>
 
@@ -244,6 +227,7 @@
 
   <!--    <script src="js/vendor/foundation.min.js"></script>-->
   <script src="js/app.js"></script>
+  <script src="js/projects.js"></script>
 </body>
 
 </html>
