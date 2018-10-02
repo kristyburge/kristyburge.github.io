@@ -1,21 +1,27 @@
-
 /*=======*/
 /*GENERAL*/
 /*=======*/
-.button.primary {
-    background-color: rebeccapurple;
+
+
+/*==========*/
+/*TYPOGRAPHY*/
+/*==========*/
+
+
+
+/*=======*/
+/*BUTTONS*/
+/*=======*/
+
+.button {
+  margin-right: 10px;
 }
 
-.button.primary:hover {
-    background-color: purple;
+.button.success,
+.button.success:hover,
+.button.success:focus  {
+  color: #fff;
 }
-
-/* use grid-container built-in class instead */
-/* .wrap {
-    width: 90%;
-    max-width: 1024px;
-    margin: 0 auto;
-} */
 
 
 .totop {
@@ -45,6 +51,7 @@
     -webkit-transform: translate(1px, 1px);
     transform: translate(1px, 1px);
 }
+
 
 /*========================*/
 /*NAV - Mobile */
@@ -126,8 +133,8 @@
 .nav-desktop li a:active,
 .is-active {
     background: transparent;
-    -webkit-box-shadow: 0 3px 0 hotpink;
-    box-shadow: 0 3px 0 hotpink;
+    -webkit-box-shadow: 0 3px 0 #f06292;
+    box-shadow: 0 3px 0 #f06292;
 }
 
 .site-logo,
@@ -187,6 +194,14 @@
 /*=======*/
 /*CONTACT*/
 /*=======*/
+#contact {
+  margin-bottom: 2em;
+}
+
+#contact h4 {
+  /* margin: 2em 0 0; */
+}
+
 .get-in-touch {
   font-size: 1.1em;
 }
@@ -205,7 +220,7 @@
 .email:hover,
 .phone:active,
 .email:active {
-  color: rebeccapurple;
+  color: #7C4DFF;
 }
 
 .social-icon {
@@ -217,7 +232,7 @@
 }
 
 .social-icon svg {
-  color: rebeccapurple;
+  color: #7C4DFF;
 }
 
 .social-icon svg:hover {
@@ -226,8 +241,18 @@
 
 .phone svg:hover,
 .email svg:hover {
-  color: rebeccapurple;
+  color: #7C4DFF;
   opacity: 0.8;
+}
+
+
+/*===========*/
+/*PROJECTS/
+/*===========*/
+.card a {
+  align-self: center;
+  max-width: 100%;
+  padding-top: 1.2em;
 }
 
 /*===========*/

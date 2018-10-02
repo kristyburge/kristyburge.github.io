@@ -12,7 +12,7 @@
     "name": "Employee Directory",
     "description": "Some API stuff and a custom lighbox!",
     "image": "https://placehold.it/300x250",
-    "github": "",
+    "github": "https://github.com/kristyburge",
     "url": ""
   },
   {
@@ -20,7 +20,7 @@
     "name": "Photo Gallery",
     "description": "I made a lightbox",
     "image": "https://placehold.it/300x250",
-    "github": "",
+    "github": "https://github.com/kristyburge",
     "url": ""
   },
   {
@@ -28,7 +28,7 @@
     "name": "Video Player",
     "description": "HTML5 Video Player",
     "image": "https://placehold.it/300x250",
-    "github": "",
+    "github": "https://github.com/kristyburge",
     "url": ""
   },
   {
@@ -36,7 +36,7 @@
     "name": "React Flickr Gallery",
     "description": "Built on React and API",
     "image": "https://placehold.it/300x250",
-    "github": "",
+    "github": "https://github.com/kristyburge",
     "url": ""
   },
   {
@@ -44,7 +44,7 @@
     "name": "Responsive Forms",
     "description": "This project uses the HTML5 forms.",
     "image": "https://placehold.it/300x250",
-    "github": "",
+    "github": "https://github.com/kristyburge",
     "url": ""
   }
 ]

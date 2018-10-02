@@ -12,6 +12,14 @@
 </head>
 
 <body>
+  <noscript>
+    <div class="callout warning large">
+      <h5>Whoa! Things look funky!</h5>
+      <p class="lead">It's because your browser has JavaScript disabled.</p>
+      <p>Please enable JavaScript in your browser to view my projects and contact information. Plus, the site will look much nicer :)</p>
+    </div>
+  </noscript>
+
   <div class="off-canvas-wrapper" id="home" data-magellan-target="home">
     <div class="off-canvas position-left" data-transition="overlap" id="offCanvas" data-off-canvas>
       <!-- Your menu or Off-canvas content goes here -->
@@ -108,8 +116,13 @@
                 <h2>Projects</h2>
                 <hr>
               </div>
+              <div class="loading">LOADING...</div>
               <!-- insert projects here -->
-
+              <noscript>
+                <div class="callout warning large">
+                  <p class="lead">Please enable JavaScript in your browser to view my projects.</p>
+                </div>
+              </noscript>
               <!-- TEMPLATE -->
               <!-- <div class="medium-6 large-4 cell">
                 <div class="card" id="card-id">
@@ -140,22 +153,29 @@
             <div class="cell text-center">
               <h2>Contact</h2>
               <hr>
+              <p class="lead">I'd love to hear from you! Want to work with me? Get in touch below and we'll chat about your business needs.</p>
+              <div class="callout secondary success">Accepting new clients for December 2018! Book your project today.</div>
             </div>
 
             <div class="medium-6 cell">
               <h4>Get in Touch!</h4>
               <hr>
               <div>
-                <span class="get-in-touch">Phone:
+                <noscript>
+                  <div class="callout warning large">
+                    <p class="lead">Please enable JavaScript in your browser to view my contact info.</p>
+                  </div>
+                </noscript>
+                <span class="get-in-touch">Office:
                   <span class="phone"><i class="fas fa-phone-square "></i>
-                    <a href="tel:405-265-8589" class="phone"> 405-265-8589</a>
+                    <!-- phone info goes here -->
                   </span>
                 </span>
               </div>
               <div>
                 <span class="get-in-touch">Email:
                   <span class="email"><i class="far fa-envelope-open"></i>
-                    <a href="mailto:hello@kristyburge.com" class="email">hello@kristyburge.com</a>
+                    <!-- email info goes here -->
                   </span>
                 </span>
               </div>
@@ -230,6 +250,7 @@
   <!--    <script src="js/vendor/foundation.min.js"></script>-->
   <script src="js/app.js"></script>
   <script src="js/projects.js"></script>
+  <script src="js/contact.js"></script>
 </body>
 
 </html>
