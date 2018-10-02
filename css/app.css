@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 
 /*==========*/
 /*GENERAL*/
@@ -193,7 +193,12 @@ svg.fa-react {
     text-shadow: 1px 2px #ccc;
     margin: 0;
     color: #212121;
+    padding: 0;
     line-height: 60px;
+}
+
+.site-logo img {
+  max-height: 80px;
 }
 
 .sticky.is-stuck {
@@ -214,6 +219,7 @@ svg.fa-react {
   .no-js .title-bar {
     display: none;
   }
+
 }
 
 /*=======*/
@@ -231,8 +237,6 @@ svg.fa-react {
 /*=======*/
 /*TYPED JS STYLES*/
 /*=======*/
-@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
-
 
 #typed {
   font-size: 3em;
@@ -272,14 +276,15 @@ svg.fa-react {
   border-radius: 50%;
   display: inline-block;
   float: left;
-  margin: 0 15px 15px 0;
+  margin: 0 auto;
+  border-width: 0.3em;
+  border-color: #777;
   transition: transform 0.25s ease-out;
 }
 
 .profile-img:hover {
   transform: scale(1.05);
 }
-
 
 /*=======*/
 /*CONTACT*/
@@ -452,10 +457,15 @@ svg.fa-react {
 /*=============*/
 /*MEDIA QUERIES*/
 /*=============*/
+
 @media screen and (min-width: 40em) {
     .nav-desktop {
         height: 80px;
         padding: 0 2em;
+    }
+    .profile-img {
+        margin: 0 30px 15px 0;
+        max-width: none;
     }
 
     .totop {
@@ -466,7 +476,7 @@ svg.fa-react {
     }
 
     .top-bar {
-        height: 115px;
+        height: 150px;
     }
     .top-bar .site-logo {
         text-align: center;
@@ -498,7 +508,7 @@ svg.fa-react {
 
 @media screen and (min-width: 1024px) {
     .top-bar {
-        height: 80px;
+        height: 100px;
         line-height: 80px;
     }
     .top-bar .site-logo {
