@@ -5,7 +5,7 @@ $(document).foundation();
 // ============
 // Display the "to top" button only when the user has scrolled down the page 300px
 window.onscroll = function() {
-    displayToTopBtn()
+    displayToTopBtn();
 };
 
 function displayToTopBtn() {
@@ -90,7 +90,7 @@ function createCard(id, name, description, image, github, url){
 
   const openModal = document.createElement('BUTTON');
   openModal.classList.add('button', 'hollow', 'secondary');
-  openModal.setAttribute('data-open', `project-${id}`)
+  openModal.setAttribute('data-open', `project-${id}`);
   openModal.innerText = 'Open details';
 
   linksContainer.appendChild(githubLink);
@@ -141,7 +141,7 @@ function createOverlay(id, name, description, skills, image, github, url){
         let skillItem = document.createElement('LI');
         skillItem.innerText = skill;
         skillsContainer.appendChild(skillItem);
-      })
+      });
 
       const linksContainer = document.createElement('DIV');
       linksContainer.classList.add('links');

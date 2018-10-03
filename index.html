@@ -8,6 +8,7 @@
   <title>Kristy Burge - Web Developer Portfolio</title>
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
   <link rel="shortcut icon" href="img/favicon-kb.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
   <link rel="stylesheet" href="css/foundation.css">
   <link rel="stylesheet" href="css/app.css">
 </head>
@@ -48,7 +49,7 @@
           </div>
         </div>
         <div>
-          <h1 class="site-logo text-center"><a href="#">Kristy Burge</a></h1>
+          <h3 class="site-logo text-center"><a href="#">Kristy Burge</a></h3>
         </div>
       </div>
 
@@ -56,7 +57,7 @@
       <div class="show-for-medium medium-horizontal" data-sticky-container>
         <nav class="top-bar nav-desktop stacked-for-medium" data-sticky data-margin-top="0">
           <div class="top-bar-left">
-            <h3 class="site-logo"><a href="/"><img src="img/kristy-burge-logo.png" class="logo" alt="Kristy Burge, Front-End Developer Logo"></a></h3>
+            <h1 class="site-logo"><a href="/"><img src="img/kristy-burge-logo.png" class="logo" alt="Kristy Burge, Front-End Developer Logo"></a></h1>
           </div>
 
           <div class="top-bar-right">
@@ -76,18 +77,25 @@
         <div class="grid-container">
           <div class="grid-x grid-margin-x grid-padding-x grid-padding-y">
             <div class="medium-10 large-8 large-offset-2 cell">
+
+              <h2>Hey, I'm Kristy</h2>
+              <p class="lead">I design and develop websites that make life easier.</p>
+
               <!-- start typing -->
               <div id="typed-strings">
-                <p>Hi! I'm so glad you're here!</p>
-                <p>Hi! I'm Kristy. <br>I'm a front-end web developer.</p>
-                <p>Hi! I'm Kristy. <br>I make that stuff you envision in your head.^500 Yeah, that stuff...^500 look good online.</p>
-                <p>Hi! I'm Kristy. <br>So tell me about <strong>you...</strong> ^1000 how can I help?</p>
-                </div>
-              <span id="typed"></span>
+                <p>I'm so glad you're here!</p>
+                <p>I'm so glad you're here!<br>I'm a front-end web developer.</p>
+                <p>I'm so glad you're here!<br>I make that stuff you envision in your head.^500 Yeah, that stuff...^500 look good online.</p>
+                <p>I'm so glad you're here!<br>So tell me about <strong>you...</strong> ^1000 how can I help?</p>
+              </div>
+              <span id="typed">
+                <!-- typed content goes here -->
+              </span>
               <!-- end typing -->
-              <p class="lead">I design and develop websites that make life easier.</p>
+              <br>
               <a href="#about" class="button primary">Learn more!</a>
               <a href="#contact" class="button success">Contact Me</a>
+
             </div>
           </div>
         </div><!-- end .grid-container -->
@@ -106,12 +114,12 @@
               <div class="cell">
                 <div class="intro-text clearfix">
                   <img src="../img/kristy-burge.jpg" class="thumbnail profile-img" alt="Kristy Burge">
-                  <p class="lead">Let me introduce myself...</p>
+                  <h3>Let me introduce myself...</h3>
                   <p>I'm a front-end web developer (with an eye for design) who specializes in mobile-first, responsive web design. I'm a student (and soon to be graduate!) of the Treehouse Front End Web Developer Techdegree program.</p>
                   <p>I became interested in coding after working in the online business industry and helping other entrepreneurs troubleshoot their website issues.</p>
                   <p>I quickly discovered that I had a knack (and love) for solving technical problems, so I focused on WordPress technical support and theme design & development.</p>
                   <p>In my previous career, I crunched numbers and implemented new technology in corporate finance and accounting departments. I learned that my logical skills and Excel ninja tricks transfer well into coding.</p>
-                  <p class="lead">My Philosophy</p>
+                  <h4>My Philosophy</h4>
                   <p>I believe that technology is meant to enhance and help our daily lives. It's not supposed to be a replacement for human interaction.</p>
                   <p>So, my approach to building websites is finding a solution that makes your life easier while giving you the freedom to build <strong>real</strong> relationships with your customers.</p>
                 </div>
@@ -155,29 +163,13 @@
                 <p class="lead">Learn more by reading the case studies behind each project. Click on a card image or button to see more project details.</p>
               </div>
               <div class="loading">LOADING...</div>
-              <!-- insert projects here -->
+              <!-- Insert projects here -->
+
               <noscript>
                 <div class="callout warning large">
                   <p class="lead">Please enable JavaScript in your browser to view my projects.</p>
                 </div>
               </noscript>
-              <!-- TEMPLATE -->
-              <!-- <div class="medium-6 large-4 cell">
-                <div class="card" id="card-id">
-                  <img src="https://placehold.it/300x250">
-                  <div class="card-section">
-                    <h3>Project 1</h3>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, et minus ducimus officia nulla ducimus, non, distinctio quaerat!</p>
-                    <div class="links">
-                      <a href="https://github.com/kristyburge" target="_blank" class="button primary">See project files</a>
-                      <a href="https://kristyburge.com" target="_blank" class="button success">See it live!</a>
-                      <button class="button" data-open="project-id">Click me for a modal</button>
-                    </div>
-                  </div>
-                </div>
-              </div> -->
-              <!-- end project template -->
 
             </div><!-- .projects-container -->
           </div><!-- end .grid-container -->
@@ -232,27 +224,8 @@
 
       <!-- Add modal -->
       <div class="modal">
-        <!-- MODAL TEMPLATE -->
-          <!-- <div class="popup" id="project-id">
-            <div class="project-details">
-              <img src="https://placehold.it/500x350">
-              <div class="project-details--more">
-                <h3>Project 1</h3>
-                <hr>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, et minus ducimus officia nulla ducimus, non, distinctio quaerat!</p>
-                <div class="links">
-                  <a href="https://github.com/kristyburge" target="_blank" class="button primary">See project files</a>
-                  <a href="https://kristyburge.com" target="_blank" class="button success">See it live!</a>
-                </div>
-              </div>
-            </div>
-          <button class="close-button button clear secondary" data-close aria-label="Close modal" type="button">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div> -->
-        <!-- end .popup -->
 
-        <!-- The rest of the modals will be generated and inserted here -->
+        <!-- The modals will be generated and inserted here -->
 
       </div>
 

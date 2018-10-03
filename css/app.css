@@ -8,13 +8,25 @@
 /*==========*/
 /*TYPOGRAPHY*/
 /*==========*/
+body {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+
 .section-title {
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2),
                2px 2px 6px rgba(155,155,155,0.2);
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-
 
 /*==========*/
 /*BRAND ICONS*/
@@ -84,7 +96,7 @@ svg.fa-react {
     background: #ccc;
     color: #444;
     font-size: 2em;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 40px;
     text-align: center;
     -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
@@ -168,7 +180,7 @@ svg.fa-react {
 }
 
 .nav-desktop li a {
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #212121;
@@ -211,17 +223,6 @@ svg.fa-react {
   display: none;
 }
 
-@media screen and (min-width: 40em) {
-  .no-js .top-bar {
-    display: block;
-  }
-
-  .no-js .title-bar {
-    display: none;
-  }
-
-}
-
 /*=======*/
 /*HERO*/
 /*=======*/
@@ -249,7 +250,7 @@ svg.fa-react {
 
 .typed-cursor {
   font-size: 3em;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .strikethrough {
@@ -422,7 +423,7 @@ svg.fa-react {
 }
 
 .footer span {
-    font-weight: bold;
+    font-weight: 700;
     color: #f5f5f5;
 }
 
@@ -450,6 +451,8 @@ svg.fa-react {
 /*=============*/
 /*MEDIA QUERIES*/
 /*=============*/
+
+/* TABLET */
 @media screen and (min-width: 40em) {
     .nav-desktop {
         height: 80px;
@@ -510,9 +513,18 @@ svg.fa-react {
       padding-right: 2em;
     }
 
+    /* Prevent flash of unstyled content */
+    .no-js .top-bar {
+      display: block;
+    }
+    .no-js .title-bar {
+      display: none;
+    }
+
 }
 
-@media screen and (min-width: 1024px) {
+/* DESKTOP */
+@media screen and (min-width: 64em) {
     .top-bar {
         height: 100px;
         line-height: 80px;
