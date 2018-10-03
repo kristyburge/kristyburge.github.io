@@ -217,12 +217,12 @@ xhr.onreadystatechange = function(){
       // end status === 200
     } else {
       loading.style.display = 'block';
-      loading.innerHTML = 'Sorry, something went wrong. Error: ' + xhr.statusText;
+      loading.innerHTML = 'Sorry, something went wrong. Error: ' + xhr.status;
     }
   // end readyState 4
   } else {
     loading.style.display = 'block';
-    loading.innerHTML = 'Sorry, something went wrong. Error: ' + xhr.statusText;
+    loading.innerHTML = 'Unable to connect. Please try again later.' + xhr.status;
   }
 };
 
