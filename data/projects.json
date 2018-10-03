@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Guessing Game App",
-    "description": "This guessing game app works best on tablets and larger.",
+    "description": "Created a Game Show App with vanilla JavaScript using arrays, functions, loops, conditionals, and events. This guessing game app works best on tablets and larger.",
     "skills": ["HTML5", "CSS3", "JavaScript"],
     "image": "../img/game-show-app-kristyburge.png",
     "github": "https://github.com/kristyburge/techdegree-game-show-app",
@@ -38,7 +38,7 @@
   {
     "id": 5,
     "name": "Web App Dashboard",
-    "description": "Built the front-end of a web app dashboard using Chart.js to create JavaScript-driven charts and local storage to save user settings.",
+    "description": "Built the front end of an interactive dashboard for a web application from scratch using advanced web techniques including SVG graphics and JavaScript programming. Implemented JavaScript-driven charts and graphics using the Chart.js library. Users can save settings to local storage.",
     "skills": ["HTML5", "CSS3", "JavaScript"],
     "image": "../img/web-app-dashboard-kristyburge.png",
     "github": "https://github.com/kristyburge/techdegree-web-app-dashboard",
