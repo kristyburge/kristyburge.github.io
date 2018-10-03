@@ -1,19 +1,19 @@
 [
   {
     "id": 1,
-    "name": "For Sale By Owner Website",
-    "description": "This project was built using Bootstrap and the Lightbox plugin. The house received 3 offers in 10 days and sold for full asking price.",
-    "skills": ["HTML5", "CSS3", "jQuery", "Bootstrap"],
-    "image": "https://placehold.it/300x250",
-    "github": "https://github.com/kristyburge",
-    "url": "https://kristyburge.com"
+    "name": "Guessing Game App",
+    "description": "This guessing game app works best on tablets and larger.",
+    "skills": ["HTML5", "CSS3", "JavaScript"],
+    "image": "../img/game-show-app-kristyburge.png",
+    "github": "https://github.com/kristyburge/techdegree-game-show-app",
+    "url": "https://kristyburge.github.io/techdegree-game-show-app/"
   },
   {
     "id": 2,
     "name": "Employee Directory",
     "description": "Built the front end of an employee directory from scratch and update the dynamic data through a public API. The employee directory features 12 employees (which update each time the app is displayed) and when an employee's card is clicked on, a modal window appears displaying more information about that employee. This project uses JavaScript, jQuery, and JSON objects through the Random User Generator API.",
     "skills": ["HTML5", "CSS3", "JavaScript", "API", "JSON"],
-    "image": "https://placehold.it/300x250",
+    "image": "../img/employee-directory-kristyburge.png",
     "github": "https://github.com/kristyburge/techdegree-employee-directory",
     "url": "https://kristyburge.github.io/techdegree-employee-directory/"
   },
@@ -22,34 +22,34 @@
     "name": "Interactive Photo Gallery",
     "description": "Built an interactive photo gallery using JavaScript to search and Lightbox plugin for the images. Users search the responsive photo gallery by typing the search box and results are found based on the caption in the photo.",
     "skills": ["HTML5", "CSS3", "JavaScript", "jQuery"],
-    "image": "https://placehold.it/300x250",
+    "image": "../img/interactive-photo-gallery-kristyburge.png",
     "github": "https://github.com/kristyburge/techdegree-interactive-photo-gallery",
     "url": "https://kristyburge.github.io/techdegree-interactive-photo-gallery/"
   },
   {
     "id": 4,
-    "name": "Video Player",
+    "name": "Interactive Video Player",
     "description": "Built an HTML5 video player using JavaScript and the HTML5 Video API to synchronize a video transcript to the video player.",
     "skills": ["HTML5", "CSS3", "SASS", "MediaElementJS", "JavaScript", "API"],
-    "image": "https://placehold.it/300x250",
+    "image": "../img/interactive-video-player-kristyburge.png",
     "github": "https://github.com/kristyburge/techdegree-interactive-video-player",
-    "url": ""
+    "url": "https://kristyburge.github.io/techdegree-interactive-video-player/"
   },
   {
     "id": 5,
-    "name": "SVG Animations",
-    "description": "Replaced raster images with scalable vector graphics for a dog boarding business.",
-    "skills": ["HTML5", "CSS3", "SVG"],
-    "image": "https://placehold.it/300x250",
-    "github": "https://github.com/kristyburge",
-    "url": ""
+    "name": "Web App Dashboard",
+    "description": "Built the front-end of a web app dashboard using Chart.js to create JavaScript-driven charts and local storage to save user settings.",
+    "skills": ["HTML5", "CSS3", "JavaScript"],
+    "image": "../img/web-app-dashboard-kristyburge.png",
+    "github": "https://github.com/kristyburge/techdegree-web-app-dashboard",
+    "url": "https://kristyburge.github.io/techdegree-web-app-dashboard/"
   },
   {
     "id": 6,
-    "name": "Responsive Forms",
+    "name": "Online Registration Form",
     "description": "Built a responsive, mobile-friendly HTML5 form and style with CSS3 using a mobile-first approach to get more subscribers to The Code Review newsletter.",
     "skills": ["HTML5", "CSS3", "Responsive Design"],
-    "image": "https://placehold.it/300x250",
+    "image": "../img/online-registration-form-kristyburge.png",
     "github": "https://github.com/kristyburge/techdegree-registration-form",
     "url": "https://kristyburge.github.io/techdegree-registration-form/"
   }

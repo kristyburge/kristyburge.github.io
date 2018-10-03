@@ -274,12 +274,14 @@ svg.fa-react {
 /*=======*/
 .profile-img {
   border-radius: 50%;
-  display: inline-block;
-  float: left;
-  margin: 0 auto;
+  display: block;
+  margin: 20px auto;
   border-width: 0.3em;
   border-color: #777;
   transition: transform 0.25s ease-out;
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
 }
 
 .profile-img:hover {
@@ -293,12 +295,12 @@ svg.fa-react {
   margin-bottom: 2em;
 }
 
-#contact h4 {
-  /* margin: 2em 0 0; */
-}
-
 .get-in-touch {
   font-size: 1.1em;
+}
+
+.next-opening {
+  font-weight: 600;
 }
 
 .phone,
@@ -344,10 +346,10 @@ svg.fa-react {
 /*===========*/
 /*PROJECTS/
 /*===========*/
-.card a {
+.card a img {
   align-self: center;
   max-width: 100%;
-  padding-top: 1.2em;
+  padding: 0.2em;
 }
 
 /*===========*/
@@ -388,29 +390,20 @@ svg.fa-react {
   flex-direction: column;
 }
 
+.popup .project-details {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.popup > .project-details img {
+  max-width: 575px;
+  height: auto;
+  align-self: center;
+}
+
 .project-details--more {
   padding-top: 2em;
 }
-
-@media screen and (min-width: 768px) {
-  .project-details {
-    flex-direction: row;
-  }
-  .project-details--more {
-    padding-left: 2em;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .popup {
-    justify-content: flex-start;
-    overflow-y: hidden;
-  }
-
-}
-
-
-
 
 /*=======*/
 /*FOOTER*/
@@ -457,15 +450,37 @@ svg.fa-react {
 /*=============*/
 /*MEDIA QUERIES*/
 /*=============*/
-
 @media screen and (min-width: 40em) {
     .nav-desktop {
         height: 80px;
         padding: 0 2em;
     }
+
     .profile-img {
         margin: 0 30px 15px 0;
-        max-width: none;
+        display: inline-block;
+        float: left;
+    }
+
+    .project-details {
+      flex-direction: row;
+    }
+
+    .project-details--more {
+      margin-top: 2em;
+    }
+
+     .popup .project-details {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2em;
+    }
+
+    .clearfix {
+      content: "";
+      display: table;
+      clear: both;
     }
 
     .totop {
@@ -494,16 +509,7 @@ svg.fa-react {
       padding-left: 2em;
       padding-right: 2em;
     }
-/*
-    .top-bar {
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    }
 
-    .top-bar-right {
-        margin: 0 auto;
-    }
-*/
 }
 
 @media screen and (min-width: 1024px) {
@@ -520,6 +526,10 @@ svg.fa-react {
     }
     .top-bar-right {
         padding-bottom: 0;
+    }
+    .popup {
+      justify-content: flex-start;
+      overflow-y: hidden;
     }
 
 }
