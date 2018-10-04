@@ -240,7 +240,7 @@ svg.fa-react {
 /*=======*/
 
 #typed {
-  font-size: 3em;
+  font-size: 2em;
   font-family: 'Dancing Script', cursive;
 }
 
@@ -249,7 +249,7 @@ svg.fa-react {
 }
 
 .typed-cursor {
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 400;
 }
 
@@ -457,6 +457,11 @@ svg.fa-react {
     .nav-desktop {
         height: 80px;
         padding: 0 2em;
+    }
+
+    #typed,
+    .typed-cursor {
+      font-size: 3em;
     }
 
     .profile-img {
