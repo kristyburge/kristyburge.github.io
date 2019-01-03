@@ -28,6 +28,19 @@ h6, .h6 {
   letter-spacing: 2px;
 }
 
+.bolded {
+  font-weight: 600;
+  font-size: 1.125em;
+}
+
+.education {
+  margin: 2.5rem 0;
+}
+
+.education ul {
+  list-style: square;
+}
+
 /*==========*/
 /*BRAND ICONS*/
 /*==========*/
@@ -238,7 +251,7 @@ svg.fa-react {
 .lead {
   font-size: 22px;
   text-shadow: 0 0 50px white, 1px 1px #ccc;
-} 
+}
 
 /*=======*/
 /*TYPED JS STYLES*/
