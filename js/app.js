@@ -23,9 +23,10 @@ function displayToTopBtn() {
 // ============
 // Typed library by https://mattboldt.com/demos/typed-js/
 const typed = new Typed('#typed', {
-  stringsElement: '#typed-strings',
-  typeSpeed: 70,
-  smartBackspace: true
+  strings: ["Do you want... ^500 more revenue?", "Do you want... ^500 to save time?", "Do you want... ^500 happy customers?"],
+  typeSpeed: 100,
+  smartBackspace: true,
+  startDelay: 200
 });
 
 // ============

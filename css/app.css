@@ -235,6 +235,11 @@ svg.fa-react {
    box-shadow: 3px 3px 100px inset rgba(0,0,0,0.5);
 }
 
+.lead {
+  font-size: 22px;
+  text-shadow: 0 0 50px white, 1px 1px #ccc;
+} 
+
 /*=======*/
 /*TYPED JS STYLES*/
 /*=======*/
@@ -251,6 +256,8 @@ svg.fa-react {
 .typed-cursor {
   font-size: 2em;
   font-weight: 400;
+  color: #f06292;
+  opacity: 0.8;
 }
 
 .strikethrough {
