@@ -465,7 +465,10 @@ svg.fa-react {
 }
 
 .siteinfo {
-    text-transform: lowercase;
+    text-shadow: 0 2px 2px #444; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
 }
 
 /*=============*/
