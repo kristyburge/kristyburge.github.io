@@ -1,284 +1,251 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kristy Burge - Web Developer Portfolio</title>
-  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
-  <link rel="shortcut icon" href="img/favicon-kb.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-  <link rel="stylesheet" href="css/foundation.css">
-  <link rel="stylesheet" href="css/app.css">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kristy Burge - Web Developer Portfolio</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/favicon-kb.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
 </head>
 
 <body>
-  <noscript>
-    <div class="callout warning large">
-      <h5>Whoa! Things look funky!</h5>
-      <p class="lead">It's because your browser has JavaScript disabled.</p>
-      <p>Please enable JavaScript in your browser to view my projects and contact information. Plus, the site will look much nicer :)</p>
-    </div>
-  </noscript>
-
-  <div class="off-canvas-wrapper" id="home" data-magellan-target="home">
-    <div class="off-canvas position-left" data-transition="overlap" id="offCanvas" data-off-canvas>
-      <!-- Your menu or Off-canvas content goes here -->
-      <nav class="mobile-nav">
-        <h3 class="site-logo text-center">Kristy Burge</h3>
-        <ul class="menu vertical">
-          <li><a href="/">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <button class="close-button" aria-label="Close menu" type="button" data-close>
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div><!-- end off-canvas content -->
-
-    <div class="off-canvas-content" data-off-canvas-content>
-      <!-- Your page content lives here -->
-      <div class="show-for-small-only mobile-menu">
-        <div class="title-bar">
-          <div class="title-bar-left">
-            <button class="menu-icon" type="button" data-open="offCanvas"></button>
-            <span class="title-bar-title">Menu</span>
-          </div>
+    <noscript>
+        <div class="callout warning large">
+            <h5>Whoa! Things look funky!</h5>
+            <p class="lead">It's because your browser has JavaScript disabled.</p>
+            <p>Please enable JavaScript in your browser to view my projects and contact information. Plus, the site will look much nicer :)</p>
         </div>
-        <div>
-          <h3 class="site-logo text-center"><a href="#">Kristy Burge</a></h3>
-        </div>
-      </div>
-
-
-      <div class="show-for-medium medium-horizontal" data-sticky-container>
-        <nav class="top-bar nav-desktop stacked-for-medium" data-sticky data-margin-top="0">
-          <div class="top-bar-left">
-            <h1 class="site-logo"><a href="/"><img src="img/kristy-burge-logo.png" class="logo" alt="Kristy Burge, Front-End Developer Logo"></a></h1>
-          </div>
-
-          <div class="top-bar-right">
-            <ul class="menu" data-magellan data-offset="70">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-        </nav>
-      </div><!-- end sticky nav -->
-
-
-      <!-- HERO SECTION -->
-      <section class="hero">
-        <div class="grid-container">
-          <div class="grid-x grid-margin-x grid-padding-x grid-padding-y">
-            <div class="large-8 large-offset-2 cell">
-
-              <h2>Hey, I'm Kristy</h2>
-              <p class="lead">I design and develop websites for businesses who want to use technology in a way that improves their relationships with customers.</p>
-
-              <!-- start typing -->
-              <div>
-                <span id="typed"></span>
-              </div>
-              <!-- end typing -->
-              <br>
-              <a href="#about" class="button primary">Learn more!</a>
-              <a href="#contact" class="button success">Contact Me</a>
-
-            </div>
-          </div>
-        </div><!-- end .grid-container -->
-      </section>
-
-      <!-- MAIN SECTION -->
-      <main class="main">
-
-        <section id="about" data-magellan-target="about">
-          <div class="grid-container">
-            <div class="grid-x grid-margin-x grid-padding-x grid-padding-y">
-              <div class="cell text-center">
-                <h2 class="section-title">About</h2>
-                <hr>
-              </div>
-              <div class="cell">
-                <div class="intro-text clearfix">
-                  <h3>About Me</h3>
-                  <p>Hi! I'm Kristy, a front-end web developer. I enjoy building projects with JavaScript and solving problems with code.</p>
-                </div>
-              </div>
-
-              <div class="cell text-center">
-                <h3>Skills & Education</h3>
-                <hr>
-              </div>
-              <div class="cell medium-2 medium-offset-1 text-center skill">
-                <i class="fab fa-html5"></i>
-                <span> HTML5</span>
-              </div>
-              <div class="cell medium-2 text-center skill">
-                <i class="fab fa-css3-alt"></i>
-                <span> CSS3</span>
-              </div>
-              <div class="cell medium-2 text-center skill">
-                <i class="fab fa-js"></i>
-                <span> JavaScript</span>
-              </div>
-              <div class="cell medium-2 text-center skill">
-                <i class="fab fa-sass"></i>
-                <span> Sass</span>
-              </div>
-              <div class="cell medium-2 text-center skill">
-                <i class="fab fa-react"></i>
-                <span> React</span>
-              </div>
-              <div class="cell education">
-                <ul>
-                  <li>
-                    <span class="bolded"><a href="https://www.credential.net/x9yhspdw" target="_blank">Techdegree, Front End Web Development,</a></span> Treehouse (2018)
-                  </li>
-                  <li>
-                    <span class="bolded">Certificate, WordPress Developer Blueprint,</span> Skillcrush (2016)
-                  </li>
-                  <li>
-                    <span class="bolded">Certificate, Certified Digital Business Consultant,</span> WP Elevation (2015)
-                  </li>
-                  <li>
-                    <span class="bolded">MBA,</span> Missouri State University (2010)
-                  </li>
-                  <li>
-                  <span class="bolded">BS, Administrative Management (magna cum laude),</span> Missouri State University (2004)
-                  </li>
+    </noscript>
+    <div class="off-canvas-wrapper" id="home" data-magellan-target="home">
+        <div class="off-canvas position-left" data-transition="overlap" id="offCanvas" data-off-canvas>
+            <!-- Your menu or Off-canvas content goes here -->
+            <nav class="mobile-nav">
+                <h3 class="site-logo text-center">Kristy Burge</h3>
+                <ul class="menu vertical">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-
-
-              </div>
-
-            </div>
-          </div><!-- end .grid-container -->
-        </section>
-
-        <section id="projects" data-magellan-target="projects">
-          <div class="grid-container">
-            <div class="projects-container grid-x grid-margin-x grid-padding-x grid-padding-y">
-              <div class="cell text-center">
-                <h2 class="section-title">Projects</h2>
-                <hr>
-                <p class="lead">Learn more by reading the case studies behind each project. Click on a card image or button to see more project details.</p>
-              </div>
-              <div class="loading">LOADING...</div>
-              <!-- Insert projects here -->
-
-              <noscript>
-                <div class="callout warning large">
-                  <p class="lead">Please enable JavaScript in your browser to view my projects.</p>
+            </nav>
+            <button class="close-button" aria-label="Close menu" type="button" data-close>
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div><!-- end off-canvas content -->
+        <div class="off-canvas-content" data-off-canvas-content>
+            <!-- Your page content lives here -->
+            <div class="show-for-small-only mobile-menu">
+                <div class="title-bar">
+                    <div class="title-bar-left">
+                        <button class="menu-icon" type="button" data-open="offCanvas"></button>
+                        <span class="title-bar-title">Menu</span>
+                    </div>
                 </div>
-              </noscript>
-
-            </div><!-- .projects-container -->
-          </div><!-- end .grid-container -->
-        </section>
-
-      </main>
-
-      <section id="contact" data-magellan-target="contact">
-        <div class="grid-container">
-          <div class="grid-x grid-margin-x grid-padding-x grid-padding-y">
-            <div class="cell text-center">
-              <h2 class="section-title">Contact</h2>
-              <hr>
-              
+                <div>
+                    <h3 class="site-logo text-center"><a href="#">Kristy Burge</a></h3>
+                </div>
             </div>
-
-            <div class="medium-6 cell">
-              <h4>Get in Touch!</h4>
-              <hr>
-                
-                <form action="" method="POST">
-                  <div class="small-3 cell">
-                    <label for="name">Your name</label>  
-                  </div>
-                  <div class="small-9-cell">
-                    <input type="text" id="name" name="name" placeholder="your name" required>
-                  </div>
-
-                  <div class="small-3 cell">
-                    <label for="email">Your email</label>  
-                  </div>
-                  <div class="small-9 cell">
-                    <input type="email" id="email" name="email" placeholder="your email" required>  
-                  </div>
-                  
-                  <div class="small-3 cell">
-                    <label for="message">Your message</label>  
-                  </div>
-                  <div class="small-9 cell">
-                    <textarea placeholder="say something..." required></textarea>
-                  </div>
-                  <input class="button primary" type="button" value="Send">
-                </form>
+            <div class="show-for-medium medium-horizontal" data-sticky-container>
+                <nav class="top-bar nav-desktop stacked-for-medium" data-sticky data-margin-top="0">
+                    <div class="top-bar-left">
+                        <h1 class="site-logo"><a href="/"><img src="img/kristy-burge-logo.png" class="logo" alt="Kristy Burge, Front-End Developer Logo"></a></h1>
+                    </div>
+                    <div class="top-bar-right">
+                        <ul class="menu" data-magellan data-offset="70">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div><!-- end sticky nav -->
+            <!-- HERO SECTION -->
+            <section class="hero">
+                <div class="grid-container">
+                    <div class="grid-x grid-margin-x grid-padding-x grid-padding-y">
+                        <div class="large-8 large-offset-2 cell">
+                            <h2>I'm Kristy</h2>
+                            <p class="lead">I enjoy writing code that solves problems and improves the user experience through interactivity.</p>
+                            <!-- start typing -->
+                            <div>
+                                <span id="typed"></span>
+                            </div>
+                            <!-- end typing -->
+                            <br>
+                            <a href="#about" class="button primary">Learn more!</a>
+                            <a href="#contact" class="button success">Contact Me</a>
+                        </div>
+                    </div>
+                </div><!-- end .grid-container -->
+            </section>
+            <!-- MAIN SECTION -->
+            <main class="main">
+                <section id="about" data-magellan-target="about">
+                    <div class="grid-container">
+                        <div class="grid-x grid-margin-x grid-padding-x grid-padding-y">
+                            <div class="cell text-center">
+                                <h2 class="section-title">About</h2>
+                                <hr>
+                            </div>
+                            <div class="cell">
+                                <div class="intro-text clearfix">
+                                    <h3>About Me</h3>
+                                    <p>Hi! I'm Kristy, a front-end web developer. I enjoy building projects with JavaScript and solving problems with code.</p>
+                                </div>
+                            </div>
+                            <div class="cell text-center">
+                                <h3>Skills & Education</h3>
+                                <hr>
+                            </div>
+                            <div class="cell medium-2 medium-offset-1 text-center skill">
+                                <i class="fab fa-html5"></i>
+                                <span> HTML5</span>
+                            </div>
+                            <div class="cell medium-2 text-center skill">
+                                <i class="fab fa-css3-alt"></i>
+                                <span> CSS3</span>
+                            </div>
+                            <div class="cell medium-2 text-center skill">
+                                <i class="fab fa-js"></i>
+                                <span> JavaScript</span>
+                            </div>
+                            <div class="cell medium-2 text-center skill">
+                                <i class="fab fa-sass"></i>
+                                <span> Sass</span>
+                            </div>
+                            <div class="cell medium-2 text-center skill">
+                                <i class="fab fa-react"></i>
+                                <span> React</span>
+                            </div>
+                            <div class="cell education">
+                                <ul>
+                                    <li>
+                                        <span class="bolded"><a href="https://www.credential.net/x9yhspdw" target="_blank">Techdegree, Front End Web Development,</a></span> Treehouse (2018)
+                                    </li>
+                                    <li>
+                                        <span class="bolded">Certificate, WordPress Developer Blueprint,</span> Skillcrush (2016)
+                                    </li>
+                                    <li>
+                                        <span class="bolded">Certificate, Certified Digital Business Consultant,</span> WP Elevation (2015)
+                                    </li>
+                                    <li>
+                                        <span class="bolded">MBA,</span> Missouri State University (2010)
+                                    </li>
+                                    <li>
+                                        <span class="bolded">BS, Administrative Management (magna cum laude),</span> Missouri State University (2004)
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- end .grid-container -->
+                </section>
+                <section id="projects" data-magellan-target="projects">
+                    <div class="grid-container">
+                        <div class="projects-container grid-x grid-margin-x grid-padding-x grid-padding-y">
+                            <div class="cell text-center">
+                                <h2 class="section-title">Projects</h2>
+                                <hr>
+                                <p class="lead">Learn more by reading the case studies behind each project. Click on a card image or button to see more project details.</p>
+                            </div>
+                            <div class="loading">LOADING...</div>
+                            <!-- Insert projects here -->
+                            <noscript>
+                                <div class="callout warning large">
+                                    <p class="lead">Please enable JavaScript in your browser to view my projects.</p>
+                                </div>
+                            </noscript>
+                        </div><!-- .projects-container -->
+                    </div><!-- end .grid-container -->
+                </section>
+            </main>
+            <section id="contact" data-magellan-target="contact">
+                <div class="grid-container">
+                    <div class="grid-x grid-margin-x grid-padding-x grid-padding-y">
+                        <div class="cell text-center">
+                            <h2 class="section-title">Contact</h2>
+                            <hr>
+                        </div>
+                        <div class="medium-6 cell">
+                            <h4>Send a message</h4>
+                            <hr>
+                            <form class="contact--form" action="/" method="POST">
+                                <div class="small-3 cell">
+                                    <label for="name">Your name</label>
+                                </div>
+                                <div class="small-9-cell">
+                                    <input type="text" id="name" name="name" placeholder="your name" required>
+                                </div>
+                                <div class="small-3 cell">
+                                    <label for="email">Your email</label>
+                                </div>
+                                <div class="small-9 cell">
+                                    <input type="email" id="email" name="email" placeholder="your email" required>
+                                </div>
+                                <div class="small-3 cell">
+                                    <label for="message">Your message</label>
+                                </div>
+                                <div class="small-9 cell">
+                                    <textarea id="message" placeholder="say something..." required></textarea>
+                                </div>
+                                <input class="button secondary contact--submit" type="submit" value="Send">
+                            </form>
+                            <div data-alert class="alert-box warning radius" tabindex="0" aria-live="assertive" role="alertdialog">
+                                Oops. Something went wrong. In the meantime, please contact me on LinkedIn, GitHub, or Codepen. Thanks!
+                                <button tabindex="0" class="close" aria-label="Close Alert">&times;</button>
+                            </div>
+                        </div>
+                        <div class="medium-6 cell">
+                            <h4>Let's connect</h4>
+                            <hr>
+                            <a href="https://github.com/kristyburge" target="_blank" class="social-icon"><i class="fab fa-github fa-2x"></i></a>
+                            <a href="https://linkedin.com/in/kristyburge" target="_blank" class="social-icon"><i class="fab fa-linkedin-in fa-2x"></i></a>
+                            <a href="https://codepen.io/kristyburge/" target="_blank" class="social-icon"><i class="fab fa-codepen fa-2x" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div><!-- end .grid-container -->
+            </section>
+            <!-- Add modal -->
+            <div class="modal">
+                <!-- The modals will be generated and inserted here -->
             </div>
-            <div class="medium-6 cell">
-              <h4>My Work</h4>
-              <hr>
-              <a href="https://github.com/kristyburge" target="_blank" class="social-icon"><i class="fab fa-github fa-2x"></i></a>
-              <a href="https://linkedin.com/in/kristyburge" target="_blank" class="social-icon"><i class="fab fa-linkedin-in fa-2x"></i></a>
-              <a href="https://codepen.io/kristyburge/" target="_blank" class="social-icon"><i class="fab fa-codepen fa-2x" aria-hidden="true"></i></a>
-            </div>
-          </div>
-        </div><!-- end .grid-container -->
-      </section>
-
-      <!-- Add modal -->
-      <div class="modal">
-
-        <!-- The modals will be generated and inserted here -->
-
-      </div>
-
-
-      <!-- FOOTER -->
-      <footer class="footer">
-        <div class="grid-container">
-          <div class="grid-x grid-margin-x grid-padding-x grid-padding-y">
-            <div class="cell medium-5 medium-offset-3">
-              <hr>
-              <p class="siteinfo">Copyright &copy; 2018&ndash;2019 by Kristy Burge</p>
-            </div>
-          </div>
-        </div><!-- end .grid-container -->
-      </footer>
-
-      <div data-magellan>
-        <a href="#home">
-          <span class="totop" id="top">
-            <i class="fas fa-angle-up"></i>
-          </span>
-        </a>
-      </div><!-- end .totop svg icon -->
+            <!-- FOOTER -->
+            <footer class="footer">
+                <div class="grid-container">
+                    <div class="grid-x grid-margin-x grid-padding-x grid-padding-y">
+                        <div class="cell medium-6 medium-offset-3">
+                            <hr>
+                            <p class="siteinfo">Copyright &copy; 2018&ndash;2019 by Kristy Burge</p>
+                        </div>
+                    </div>
+                </div><!-- end .grid-container -->
+            </footer>
+            <div data-magellan>
+                <a href="#home">
+                    <span class="totop" id="top">
+                        <i class="fas fa-angle-up"></i>
+                    </span>
+                </a>
+            </div><!-- end .totop svg icon -->
+        </div>
     </div>
-  </div>
-
-  <!-- Load local if CDN fails -->
-  <script src="js/vendor/jquery.js"></script>
-  <script src="js/vendor/what-input.js"></script>
-  <script src="js/vendor/foundation.min.js"></script>
-
-  <!-- CDN -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/what-input/5.1.2/what-input.min.js" integrity="sha256-JZSCmGGQUyffJFe7ABkAk/cIPAYtkbh9mx7VWbQszR8=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0-rc.3/dist/js/foundation.min.js" integrity="sha256-l1HhyJ0nfWQPdwsVJLNq8HfZNb3i1R9M82YrqVPzoJ4= sha384-NH8utV74bU+noXiJDlEMZuBe34Bw/X66sw22frHkgIs8R1QKWc8ckxYB4DheLjH4 sha512-JMs3Y+JjY+DhwVOPeJhkLM/0FeK9ANxvuYiHGpGp7Q2kMlmNEN/2v6TkrXdirxqB3DHxPlQ8iMxvb/eSPCF5CA=="
-    crossorigin="anonymous"></script>
-
-  <!-- Load Typed.js Library -->
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9/lib/typed.min.js" integrity="sha256-GoaMrUoEIL6dw8RzblEYTqd9wb9JwAtI+EM8dKoGziU=" crossorigin="anonymous"></script>
-
-  <!-- Custom JS -->
-  <script src="js/app.js"></script>
+    <!-- Load local if CDN fails -->
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.min.js"></script>
+    <!-- CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/what-input/5.1.2/what-input.min.js" integrity="sha256-JZSCmGGQUyffJFe7ABkAk/cIPAYtkbh9mx7VWbQszR8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0-rc.3/dist/js/foundation.min.js" integrity="sha256-l1HhyJ0nfWQPdwsVJLNq8HfZNb3i1R9M82YrqVPzoJ4= sha384-NH8utV74bU+noXiJDlEMZuBe34Bw/X66sw22frHkgIs8R1QKWc8ckxYB4DheLjH4 sha512-JMs3Y+JjY+DhwVOPeJhkLM/0FeK9ANxvuYiHGpGp7Q2kMlmNEN/2v6TkrXdirxqB3DHxPlQ8iMxvb/eSPCF5CA==" crossorigin="anonymous"></script>
+    <!-- Load Typed.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9/lib/typed.min.js" integrity="sha256-GoaMrUoEIL6dw8RzblEYTqd9wb9JwAtI+EM8dKoGziU=" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="js/app.js"></script>
 </body>
 
 </html>
